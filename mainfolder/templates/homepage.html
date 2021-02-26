@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>members database !!!!</h1>
+<!--we need to retrieve all object and we call the key in dictionary-->
+<ul>
+{% for i in all %}
+
+<!--<li> {{ i }} </li>-->
+ <li> <b> {{ i.fname }} {{ i.lname }} </b> <br> </li>
+
+     <li>  Age:{{ i.age }}<br> </li>
+     <li>  Email:{{ i.email }}<br> </li>
+
+    <hr>
+
+{% endfor %}
+
+<ul>
+
+</body>
+</html>
+
+{% endblock content %}
